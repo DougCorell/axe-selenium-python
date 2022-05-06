@@ -98,49 +98,6 @@ Resources
 CHANGELOG
 ^^^^^^^^^^^^^^
 
-version 3.0.0
-*************
-- Updated axe-core version to 4.4.1 - see instructions below:
-
-How to upgrade to new version of axe-core
------------------------------------------
-
-- Updates to axe-selenium-python/axe_selenium_python/package.json
-    - Update the dependencies to the needed version of axe core
-    - Example code below
-
-.. code-block:: bash
-    "dependencies": {
-        "axe-core": ">=4.4.1"
-    }
-- Updates to axe-selenium-python/axe_selenium_python/package-lock.json
-    - In the axe-core blob, update version and resolved to the version needed.
-    - Navigate to registry using https://registry.npmjs.org/axe-core/ and search for resolved .tgz and copy the integrity key.
-        and update in package-lock.json file
-    - Example code below
-
-.. code-block:: bash
-    "axe-core": {
-      "version": "4.4.1",
-      "resolved": "https://registry.npmjs.org/axe-core/-/axe-core-4.4.1.tgz",
-      "integrity": "sha512-gd1kmb21kwNuWr6BQz8fv6GNECPBnUasepcoLbekws23NVBLODdsClRZ+bQ8+9Uomf3Sm3+Vwn0oYG9NvwnJCw=="
-    }
-- Get the latest axe.min.js
-    - cd into axe-selenium-python/axe_selenium_python
-    - Run `npm install` inside the axe-selenium-python directory.
-    - Copy axe-selenium-python/axe_selenium_python/node_modules/axe-core/axe.min.js file and replace
-        axe-selenium-python/axe_selenium_python/tests/src/axe.min.js.
-    - Open axe-selenium-python/axe_selenium_python/tests/src/axe.min.js file and validate the needed version is available.
-    - Delete the axe-selenium-python/axe_selenium_python/node_modules folder.
-
-- Push the branch up to Github.
-- To test, add the below to a requirements.txt file and try to pip install. Validate that axe-selenium-python/axe_selenium_python/tests/src/axe.min.js file
-    is pointing to the needed version. Also compare the web plugin and automated test results should match.
-
-.. code-block:: bash
-    git+https://github.com/DougCorell/axe-selenium-python.git@fix/update-axe-core-441#egg=axe-selenium-python
-
-
 version 2.1.5
 *************
 **Breaks backwards compatibility**:
