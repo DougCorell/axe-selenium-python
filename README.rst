@@ -98,6 +98,10 @@ Resources
 CHANGELOG
 ^^^^^^^^^^^^^^
 
+version 4.0.0
+*************
+- Updated axe-core version to 4.6.2
+
 version 3.0.0
 *************
 - Updated axe-core version to 4.4.1 - see instructions below:
@@ -127,7 +131,7 @@ version 3.0.0
 
 - Get the latest axe.min.js
    - cd into axe-selenium-python/axe_selenium_python
-   - Run `npm install` inside the axe-selenium-python directory.
+   - Run `npm install` inside the axe_selenium_python directory.
    - Copy axe-selenium-python/axe_selenium_python/node_modules/axe-core/axe.min.js file and replace axe-selenium-python/axe_selenium_python/tests/src/axe.min.js.
    - Open axe-selenium-python/axe_selenium_python/tests/src/axe.min.js file and validate the needed version is available.
    - Delete the axe-selenium-python/axe_selenium_python/node_modules folder.
