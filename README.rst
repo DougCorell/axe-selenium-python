@@ -98,6 +98,10 @@ Resources
 CHANGELOG
 ^^^^^^^^^^^^^^
 
+version 4.1.0
+*************
+- Updated axe-core version to 4.7.2
+
 version 4.0.0
 *************
 - Updated axe-core version to 4.6.2
